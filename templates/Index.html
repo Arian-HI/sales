@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar</title>
+  <!-- فایل‌های CSS و JS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- منوی کناری -->
+  <div class="sidebar">
+    <h2 class="brand-title">Sales Less</h2>
+    <ul>
+      <!-- آیتم Peer To Peer Role-Play -->
+      <li id="peer-item">
+        <i class="fas fa-user-friends"></i>
+        <span>Peer To Peer Role-Play</span>
+      </li>
+      <!-- آیتم AI Role-Play -->
+      <li id="ai-item">
+        <i class="fas fa-robot"></i>
+        <span>AI Role-Play</span>
+      </li>
+      <!-- آیتم جدید Analytics با شناسه مشخص -->
+      <li id="analytics-item">
+        <i class="fas fa-chart-bar"></i>
+        <span>Analytics</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- بخش پروفایل در بالا سمت راست -->
+  <div class="profile-container">
+    <span class="profile-name">Arian</span>
+    <div class="profile-pic">
+      <i class="fas fa-user"></i>
+    </div>
+  </div>
+
+  <!-- باکس AI Role-Play -->
+  <div id="ai-box" class="ai-box hidden">
+    <h2>AI Role-Play</h2>
+    <p>Practice your sales pitch with the AI powered role-play partner</p>
+    <div class="ai-content">
+      <button>Start Session</button>
+      <p>Connect with a link to keep practicing</p>
+    </div>
+  </div>
+
+  <!-- باکس Peer To Peer Role-Play -->
+  <div id="peer-box" class="ai-box hidden">
+    <h2>Peer To Peer Role-Play</h2>
+    <p>Practice your sales skill with other professionals in real-time</p>
+    <div class="ai-content">
+      <button>Start Practice</button>
+      <p>Connect with peers to start practicing</p>
+    </div>
+  </div>
+
+  <!-- باکس جدید Analytics -->
+  <div id="analytics-box" class="ai-box hidden">
+    <h2>Analytics</h2>
+    <p>Track your progress and get insights from your practice sessions</p>
+    
+    <!-- کارت‌های سه‌گانه -->
+    <div class="analytics-cards">
+      <div class="analytics-card">
+        <h3>Average Score</h3>
+        <p>0 out of 100 points</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Key Strengths</h3>
+        <p>No data yet</p>
+      </div>
+      <div class="analytics-card">
+        <h3>Areas for Improvement</h3>
+        <p>No data yet</p>
+      </div>
+    </div>
+
+    <!-- بخش نمودار یا پیشرفت امتیاز -->
+    <div class="score-progression">
+      <h4>Score Progression</h4>
+      <div class="chart-placeholder">No data yet</div>
+    </div>
+
+    <!-- دکمه‌های فیدبک -->
+    <div class="feedback-section">
+      <button>Edit</button>
+      <button>Submit Feedback</button>
+    </div>
+  </div>
+
+  <!-- فایل جاوااسکریپت -->
+  <script src="script.js"></script>
+</body>
+</html>

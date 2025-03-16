@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 10px;
+    top: 0;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand-title {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #6daffe, #0056b3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: block;
+    margin-left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  
+  .sidebar ul li i {
+    margin-right: 18px;
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .sidebar ul li:hover {
+    background: #e8f0fe;
+    border-radius: 6px;
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* بخش پروفایل در بالا سمت راست */
+  .profile-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .profile-name {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .profile-pic {
+    width: 32px;
+    height: 32px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+  }
+  
+  /* باکس AI Role-Play */
+  .ai-box {
+    position: fixed;
+    top: 100px;    /* کمی پایین‌تر تا فضای پروفایل آزاد باشد */
+    left: 345px;  /* کمی به راست منتقل شد */
+    width: 1000px; /* باکس کوچک‌تر شد */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .ai-box h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .ai-box p {
+    margin: 8px 0;
+    color: #666;
+  }
+  
+  .ai-content {
+    background: #f1f3f7;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .ai-content button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ai-content button:hover {
+    background: #0069d9;
+  }
+  
+  .ai-content p {
+    margin-top: 20px;
+    color: #999;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .sidebar ul li.active {
+    background: #d6e4ff; /* رنگ پس‌زمینه‌ی متمایز */
+    
+    border-radius: 6px;
+  }
+
+  .analytics-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px; /* فاصله بین کارت‌ها */
+  }
+  
+  .analytics-card {
+    flex: 1; /* هر کارت عرض مساوی بگیرد */
+    background: #f1f3f7;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* بخش نمودار یا پیشرفت امتیاز */
+  .score-progression {
+    margin-top: 20px;
+    background: #f1f3f7;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .chart-placeholder {
+    text-align: center;
+    color: #666;
+    padding: 40px 0;
+  }
+  
+  /* دکمه‌های فیدبک در انتهای باکس */
+  .feedback-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .feedback-section button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .feedback-section button:hover {
+    background: #0069d9;
+  }
